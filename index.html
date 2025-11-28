@@ -321,4 +321,292 @@
       color: var(--text-subtle);
       display: flex;
       flex-wrap: wrap;
-      gap:
+      gap: 8px;
+      align-items: center;
+    }
+
+    .badge-category {
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <span>ArticleHub</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#latest">Latest</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hero-label">Featured Insight</div>
+        <h1 class="hero-title">Daily articles across science, food, tech, money, and life.</h1>
+        <p class="hero-subtitle">
+          A simple, ad-free reading space where everything is organized by category and easy to read on any device.
+        </p>
+
+        <div class="hero-meta">
+          <span class="pill">Updated regularly</span>
+          <span>Curated by ArticleHub</span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#latest">
+            <button class="btn-primary">
+              Start reading
+              <span class="arrow">➜</span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div>
+          <div class="hero-side-title">Why this site?</div>
+          <p>
+            No pop-ups, no tracking banners. Just clean pages around topics people enjoy:
+            science, food, tech, business, lifestyle, and opinions.
+          </p>
+        </div>
+
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <div class="hero-stat-label">Core categories</div>
+            <div class="hero-stat-value">6</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">Reading style</div>
+            <div class="hero-stat-value">Short & clear</div>
+          </div>
+        </div>
+
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <div class="hero-stat-label">Best on</div>
+            <div class="hero-stat-value">Phone · Tablet · PC</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">Ads</div>
+            <div class="hero-stat-value">0</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section aria-labelledby="section-categories">
+      <div class="section-title-row">
+        <h2 id="section-categories">Browse by category</h2>
+        <a href="categories.html">View all →</a>
+      </div>
+
+      <div class="category-grid">
+        <a href="category-science.html" class="category-card">
+          <div>
+            <div class="category-name">Science</div>
+            <div class="category-desc">
+              Everyday wonders, simple explanations, and curious facts about how the world works.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Physics · Biology · More</span>
+            <span>View →</span>
+          </div>
+        </a>
+
+        <a href="category-food.html" class="category-card">
+          <div>
+            <div class="category-name">Food</div>
+            <div class="category-desc">
+              Easy habits, stories, and small ideas to enjoy eating without stress.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Cooking · Everyday</span>
+            <span>View →</span>
+          </div>
+        </a>
+
+        <a href="category-tech.html" class="category-card">
+          <div>
+            <div class="category-name">Tech</div>
+            <div class="category-desc">
+              Phones, tools, and digital life — without the jargon or hype.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Apps · Focus</span>
+            <span>View →</span>
+          </div>
+        </a>
+
+        <a href="category-business.html" class="category-card">
+          <div>
+            <div class="category-name">Business</div>
+            <div class="category-desc">
+              Simple money frameworks, small business thinking, and practical ideas.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Money · Work</span>
+            <span>View →</span>
+          </div>
+        </a>
+
+        <a href="category-lifestyle.html" class="category-card">
+          <div>
+            <div class="category-name">Lifestyle</div>
+            <div class="category-desc">
+              Tiny routines and home habits that make everyday life calmer.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Habits · Home</span>
+            <span>View →</span>
+          </div>
+        </a>
+
+        <a href="category-opinion.html" class="category-card">
+          <div>
+            <div class="category-name">Opinion</div>
+            <div class="category-desc">
+              Short essays on pace of life, modern culture, and how we spend our days.
+            </div>
+          </div>
+          <div class="category-meta">
+            <span>Essays</span>
+            <span>View →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- LATEST ARTICLES -->
+    <section id="latest" aria-labelledby="section-latest">
+      <div class="section-title-row">
+        <h2 id="section-latest">Latest articles</h2>
+      </div>
+
+      <div class="articles-grid">
+        <div class="article-list-main">
+          <div class="article-card">
+            <a href="article-science-everyday-wonders.html">
+              <div class="article-title">
+                The Tiny Science Wonders You Walk Past Every Day
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Science</span>
+                <span>5 min read</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="article-card">
+            <a href="article-food-little-habits.html">
+              <div class="article-title">
+                5 Small Food Habits That Make Every Day Feel Better
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Food</span>
+                <span>5 min read</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="article-card">
+            <a href="article-tech-phone-balance.html">
+              <div class="article-title">
+                How to Use Your Phone Without Letting It Use You
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Tech</span>
+                <span>6 min read</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <aside class="article-list-side">
+          <div class="article-card">
+            <a href="article-business-simple-money-map.html">
+              <div class="article-title">
+                A Simple Way to Think About Money Every Month
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Business</span>
+                <span>5 min read</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="article-card">
+            <a href="article-lifestyle-evening-reset.html">
+              <div class="article-title">
+                The 10-Minute Evening Reset That Makes Mornings Easier
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Lifestyle</span>
+                <span>4 min read</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="article-card">
+            <a href="article-opinion-slow-weekends.html">
+              <div class="article-title">
+                Slow Weekends Might Be the New Luxury
+              </div>
+              <div class="article-meta">
+                <span class="badge-category">Opinion</span>
+                <span>5 min read</span>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" style="margin-top: 30px;">
+      <div class="article-list-side">
+        <h2 style="font-size: 1.05rem; margin-bottom: 6px;">About this site</h2>
+        <p style="font-size: 0.9rem; color: var(--text-subtle);">
+          ArticleHub is a simple reading site you can host for free on GitHub Pages.
+          Everything is just HTML files, so it loads fast and works on Android, iPhone,
+          tablets, and computers without any extra setup.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> ArticleHub. Built with GitHub Pages.</p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </div>
+</body>
+</html>
